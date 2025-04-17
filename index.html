@@ -1,142 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>THEZONKDUCK – The Meme is Coming</title>
+  <meta charset="UTF-8">
+  <title>ZONKDUCK – The Meme is Coming</title>
   <style>
     body {
+      background-color: black;
+      color: lime;
       font-family: monospace;
-      background-color: #000;
-      color: #00FF00;
       margin: 0;
       padding: 0;
       text-align: center;
     }
 
-    #intro {
-      position: fixed;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background: black;
-      z-index: 9999;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
+    header {
+      padding: 40px 20px 20px;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    h2 {
       color: yellow;
     }
 
-    #intro img {
-      width: 220px;
-      filter: drop-shadow(0 0 20px yellow);
-    }
-
-    header, footer {
-      background: #111;
-      padding: 1.5rem;
-      color: #0f0;
-    }
-
-    main {
-      padding: 2rem;
-    }
-
-    #zonkometer {
-      margin: 2rem auto;
-      width: 80%;
-    }
-
-    #zonkometer h2 {
-      color: #FFD700;
-    }
-
-    #zonkbar-container {
-      background: #333;
-      border-radius: 30px;
-      overflow: hidden;
-    }
-
-    #zonkbar {
-      height: 30px;
-      width: 0%;
-      background: linear-gradient(to right, yellow, orange, red);
-      transition: width 1s;
+    p {
+      font-size: 1.2em;
     }
 
     a {
       color: yellow;
       font-weight: bold;
-      text-decoration: none;
       font-size: 1.2em;
+      text-decoration: none;
     }
 
-    .imgur-gallery {
-      margin: 3rem auto;
-      width: 90%;
-      max-width: 640px;
+    a:hover {
+      text-decoration: underline;
+    }
+
+    img.logo {
+      width: 300px;
+      border-radius: 20px;
+      margin-top: 20px;
+    }
+
+    section {
+      margin: 40px 0;
+      padding: 0 20px;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .gallery img {
+      width: 200px;
+      height: auto;
+      border-radius: 10px;
+      transition: transform 0.2s;
+      box-shadow: 0 0 10px rgba(255, 255, 0, 0.5);
+    }
+
+    .gallery img:hover {
+      transform: scale(1.1);
+    }
+
+    footer {
+      background: #111;
+      padding: 20px;
+      color: white;
+      font-size: 0.9em;
+    }
+
+    .security {
+      color: #0f0;
+      text-align: left;
+      max-width: 600px;
+      margin: auto;
+      background: #111;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px lime;
     }
   </style>
 </head>
 <body>
 
-<!-- Intro Overlay -->
-<div id="intro">
-  <img src="https://i.imgur.com/ahOa3xu.png" alt="ZONKDUCK">
-  <h1>QUAAK QUAAK...</h1>
-</div>
+  <header>
+    <h1>🦆 THE ZONKDUCK IS COMING 🦆</h1>
+    <img class="logo" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZDZ3MXBzdjV6eWlhd2RhdXEwbmc5czk2cnd1cWF1NWUxdXF3ZjAxZCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/mC4nBfTFwztQ0EKMxl/giphy.gif" alt="ZONKDUCK">
+    <p>Meme first. Logic never. $ZONKDUCK soon...</p>
+    <p><a href="https://t.me/YOURTELEGRAM" target="_blank">🧠 Join the Cult</a></p>
+  </header>
 
-<!-- Sound -->
-<audio id="quack" autoplay>
-  <source src="https://www.myinstants.com/media/sounds/quack-quack.mp3" type="audio/mpeg">
-</audio>
-
-<header>
-  <h1>🦆 THEZONKDUCK 🦆</h1>
-  <p>The meme is coming... and it’s loud.</p>
-</header>
-
-<main>
-  <p>Meme first. Logic never. Token: <strong>$ZONK</strong></p>
-  <p><a href="https://t.me/YOUR_TELEGRAM_LINK" target="_blank">🔥 Join the Cult on Telegram</a></p>
-
-  <section id="zonkometer">
-    <h2>🧠 Meme Energy: ZONKOMETER</h2>
-    <div id="zonkbar-container">
-      <div id="zonkbar"></div>
+  <section id="gallery">
+    <h2>🔥 ZONKDUCK Meme Gallery</h2>
+    <div class="gallery">
+      <a href="https://i.imgur.com/0C8u9Fk.jpeg" target="_blank"><img src="https://i.imgur.com/0C8u9Fk.jpeg" alt="ZONK Meme 1"></a>
+      <a href="https://i.imgur.com/4E3NmB1.jpeg" target="_blank"><img src="https://i.imgur.com/4E3NmB1.jpeg" alt="ZONK Meme 2"></a>
+      <a href="https://i.imgur.com/4Msikn8.jpeg" target="_blank"><img src="https://i.imgur.com/4Msikn8.jpeg" alt="ZONK Meme 3"></a>
     </div>
   </section>
 
-  <section class="imgur-gallery">
-    <h2>🖼️ ZONKDUCK Gallery</h2>
-    <!-- Imgur Embed -->
-    <blockquote class="imgur-embed-pub" lang="en" data-id="a/QHpiow2" data-context="false">
-      <a href="//imgur.com/a/QHpiow2">View on Imgur</a>
-    </blockquote>
-    <script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+  <section class="security">
+    <h2>🔐 Security Policy</h2>
+    <p><strong>Supported Versions:</strong></p>
+    <ul>
+      <li>5.1.x – ✅ Supported</li>
+      <li>5.0.x – ❌ Not Supported</li>
+      <li>4.0.x – ✅ Supported</li>
+      <li>&lt; 4.0 – ❌ Not Supported</li>
+    </ul>
+    <p><strong>Reporting a Vulnerability:</strong><br>
+    Spot something weird? DM us on Telegram or send a duck via meme-mail.<br>
+    Updates within 48h. The Duck sees all.</p>
   </section>
-</main>
 
-<footer>
-  &copy; 2025 THEZONKDUCK. All Quacks Reserved.
-</footer>
-
-<script>
-  // Hide intro + play sound
-  window.addEventListener("load", () => {
-    const audio = document.getElementById("quack");
-    audio.volume = 0.4;
-    setTimeout(() => {
-      document.getElementById("intro").style.display = "none";
-    }, 4000);
-  });
-
-  // Zonkometer animation
-  function updateZonkometer() {
-    const level = Math.floor(Math.random() * 101);
-    document.getElementById("zonkbar").style.width = level + "%";
-  }
-  setInterval(updateZonkometer, 3000);
-</script>
+  <footer>
+    © 2025 ZONKDUCK Cult. Quack responsibly.
+  </footer>
 
 </body>
 </html>
