@@ -1,0 +1,27 @@
+# Betriebssystem-spezifische Dateien
+.DS_Store
+Thumbs.db
+
+# Editor-spezifische Dateien
+.vscode/
+.idea/
+
+# Build- und temporäre Dateien
+dist/
+build/
+*.log
+*.tmp
+*.bak
+
+# Node.js-abhängige Dateien (falls verwendet)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Umgebungsdateien
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
