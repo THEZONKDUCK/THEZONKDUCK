@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ZONKDUCK – The Meme is Coming</title>
   <style>
     body {
@@ -11,24 +12,39 @@
       text-align: center;
       padding: 50px;
     }
+
     h1 {
       font-size: 3em;
+      text-shadow: 0 0 10px lime, 0 0 20px lime;
     }
+
     img {
-      width: 300px;
+      max-width: 100%;
+      height: auto;
       border-radius: 20px;
+      margin: 30px 0;
     }
-    a {
-      color: yellow;
+
+    .button {
+      display: inline-block;
+      background: lime;
+      color: black;
+      padding: 15px 30px;
+      text-decoration: none;
+      border-radius: 10px;
       font-weight: bold;
       font-size: 1.2em;
+      margin: 10px;
+      transition: transform 0.2s ease-in-out;
     }
-  </style>
-</head>
-<body>
-  <h1>🦆 THE ZONKDUCK IS COMING 🦆</h1>
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZDZ3MXBzdjV6eWlhd2RhdXEwbmc5czk2cnd1cWF1NWUxdXF3ZjAxZCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/mC4nBfTFwztQ0EKMxl/giphy.gif" alt="ZONKDUCK">
-  <p>Meme first. Logic never. $ZONKDUCK soon...</p>
-  <p><a href="https://t.me/YOURTELEGRAM" target="_blank">Join the Cult</a></p>
-</body>
-</html>
+
+    .button:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 10px lime;
+    }
+
+    nav {
+      margin-top: 40px;
+    }
+
+    nav a
