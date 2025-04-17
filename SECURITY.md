@@ -15,7 +15,7 @@
 
 If you discover a vulnerability in our duckverse:
 
-1. DM us on [Twitter](x.com/thezonkduck) or [Telegram](https://t.me/ZONKDUCK).
+1. DM us on [X](https://x.com/thezonkduck) or [Telegram](https://t.me/ZONKDUCK).
 2. Or drop us a GitHub Issue marked **SECURITY**.
 3. We respond faster than a duck on bath salts 🦆💨 (usually within 24–48h).
 
