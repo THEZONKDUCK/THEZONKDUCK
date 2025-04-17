@@ -2,107 +2,135 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ZONKDUCK – The Meme is Coming</title>
+  <title>THEZONKDUCK – The Meme is Coming</title>
   <style>
     body {
-      background-color: black;
-      color: lime;
       font-family: monospace;
+      background-color: #000;
+      color: #00FF00;
+      margin: 0;
+      padding: 0;
       text-align: center;
-      padding: 50px;
     }
 
-    h1 {
-      font-size: 3em;
-      text-shadow: 0 0 10px lime, 0 0 20px lime;
+    #intro {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: black;
+      z-index: 9999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      color: yellow;
     }
 
-    img {
-      max-width: 100%;
-      height: auto;
+    #intro img {
+      width: 220px;
+      filter: drop-shadow(0 0 20px yellow);
+    }
+
+    header, footer {
+      background: #111;
+      padding: 1.5rem;
+      color: #0f0;
+    }
+
+    main {
+      padding: 2rem;
+    }
+
+    img.main-duck {
+      width: 300px;
       border-radius: 20px;
-      margin: 30px 0;
+      margin: 1rem 0;
+      border: 3px solid yellow;
     }
 
-    .button {
-      display: inline-block;
-      background: lime;
-      color: black;
-      padding: 15px 30px;
-      text-decoration: none;
-      border-radius: 10px;
-      font-weight: bold;
-      font-size: 1.2em;
-      margin: 10px;
-      transition: transform 0.2s ease-in-out;
+    #zonkometer {
+      margin: 2rem auto;
+      width: 80%;
     }
 
-    .button:hover {
-      transform: scale(1.1);
-      box-shadow: 0 0 10px lime;
+    #zonkometer h2 {
+      color: #FFD700;
     }
 
-    nav {
-      margin-top: 40px;
+    #zonkbar-container {
+      background: #333;
+      border-radius: 30px;
+      overflow: hidden;
     }
 
-    nav a {
+    #zonkbar {
+      height: 30px;
+      width: 0%;
+      background: linear-gradient(to right, yellow, orange, red);
+      transition: width 1s;
+    }
+
+    a {
       color: yellow;
       font-weight: bold;
-      font-size: 1em;
-      margin: 0 15px;
-      text-decoration: underline;
-    }
-
-    footer {
-      margin-top: 60px;
-      font-size: 0.9em;
-      color: gray;
+      text-decoration: none;
+      font-size: 1.2em;
     }
   </style>
 </head>
 <body>
-  <h1>🦆 THE ZONKDUCK IS COMING 🦆</h1>
 
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZDZ3MXBzdjV6eWlhd2RhdXEwbmc5czk2cnd1cWF1NWUxdXF3ZjAxZCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/mC4nBfTFwztQ0EKMxl/giphy.gif" alt="ZONKDUCK">
+<!-- Intro Overlay -->
+<div id="intro">
+  <img src="https://i.imgur.com/ahOa3xu.png" alt="ZONKDUCK">
+  <h1>QUAAK QUAAK...</h1>
+</div>
 
-  <p>Meme first. Logic never. $ZONKDUCK coming soon...</p>
+<!-- Sound -->
+<audio id="quack" autoplay>
+  <source src="https://www.myinstants.com/media/sounds/quack-quack.mp3" type="audio/mpeg">
+</audio>
 
-  <a href="https://t.me/ZONKDUCK" class="button" target="_blank">Join the Cult</a>
+<header>
+  <h1>🦆 THEZONKDUCK 🦆</h1>
+  <p>The meme is coming... and it’s loud.</p>
+</header>
 
-  <nav>
-    <a href="#airdrop">Airdrop</a>
-    <a href="#faq">FAQ</a>
-    <a href="#roadmap">Roadmap</a>
-  </nav>
+<main>
+  <img class="main-duck" src="https://i.imgur.com/ahOa3xu.png" alt="THEZONKDUCK Duck">
 
-  <section id="airdrop" style="margin-top: 60px;">
-    <h2>Airdrop 🪂</h2>
-    <p>Drop your wallet in our Telegram to maybe get ZONK'd 🐤</p>
+  <p>Meme first. Logic never. Token: <strong>$ZONK</strong></p>
+  <p><a href="https://t.me/YOUR_TELEGRAM_LINK" target="_blank">🔥 Join the Cult on Telegram</a></p>
+
+  <section id="zonkometer">
+    <h2>🧠 Meme Energy: ZONKOMETER</h2>
+    <div id="zonkbar-container">
+      <div id="zonkbar"></div>
+    </div>
   </section>
+</main>
 
-  <section id="faq" style="margin-top: 60px;">
-    <h2>FAQ 🤯</h2>
-    <p><strong>Q:</strong> Is this a real project?<br />
-    <strong>A:</strong> No. It’s ZONKDUCK.</p>
+<footer>
+  &copy; 2025 THEZONKDUCK. All Quacks Reserved.
+</footer>
 
-    <p><strong>Q:</strong> When launch?<br />
-    <strong>A:</strong> After the duck stops laughing.</p>
-  </section>
+<script>
+  // Hide intro + play sound
+  window.addEventListener("load", () => {
+    const audio = document.getElementById("quack");
+    audio.volume = 0.4;
+    setTimeout(() => {
+      document.getElementById("intro").style.display = "none";
+    }, 4000);
+  });
 
-  <section id="roadmap" style="margin-top: 60px;">
-    <h2>Roadmap 🗺</h2>
-    <ul style="list-style: none; padding-left: 0;">
-      <li>✅ Step 1: Confuse everyone</li>
-      <li>✅ Step 2: Meme harder than anyone</li>
-      <li>🔜 Step 3: Launch token</li>
-      <li>🚀 Step 4: Break the Internet</li>
-    </ul>
-  </section>
+  // Zonkometer animation
+  function updateZonkometer() {
+    const level = Math.floor(Math.random() * 101);
+    document.getElementById("zonkbar").style.width = level + "%";
+  }
+  setInterval(updateZonkometer, 3000);
+</script>
 
-  <footer>
-    <p>ZONKDUCK © 2025 – You were warned 🧠🦆</p>
-  </footer>
 </body>
 </html>
