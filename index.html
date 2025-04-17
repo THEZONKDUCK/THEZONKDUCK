@@ -71,7 +71,32 @@
     .gallery img:hover {
       transform: scale(1.1);
     }
+<section id="tracker">
+  <h2>📈 THEZONKDUCK Tracker</h2>
+  <div style="color: #00ff00; font-size: 1.5em; margin-top: 20px;">
+    <p>🔥 $ZONK Unleashed: <span id="zonks">0</span></p>
+    <p>💸 $ZONK Price: <span id="price">$0.0000</span></p>
+    <p>🧙 Cult Members (Holders): <span id="holders">1</span></p>
+  </div>
+</section>
 
+<script>
+  let zonks = 0;
+  let price = 0.0001;
+  let holders = 1;
+
+  function updateTracker() {
+    zonks += Math.floor(Math.random() * 25) + 1;
+    price += (Math.random() - 0.5) * 0.00001;
+    holders += Math.random() < 0.2 ? 1 : 0;
+
+    document.getElementById("zonks").innerText = zonks.toLocaleString();
+    document.getElementById("price").innerText = "$" + price.toFixed(6);
+    document.getElementById("holders").innerText = holders.toLocaleString();
+  }
+
+  setInterval(updateTracker, 2000); // Update alle 2 Sekunden
+</script>
     footer {
       background: #111;
       padding: 20px;
